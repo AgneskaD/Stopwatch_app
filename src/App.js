@@ -4,7 +4,7 @@ import { Timer } from "./components/Timer/Timer.js";
 import { useEffect, useState } from "react";
 function App() {
   const [time, setTime] = useState(0);
-  const [timer, setTimer] = useState();
+  const [timer, setTimer] = useState(false);
   const handleStart = () => {
     if (!timer) {
       setTimer(
@@ -24,7 +24,8 @@ function App() {
     return () => {
       if (timer) clearInterval(timer);
     };
-  }, []);
+  }, [timer]);
+  
   return (
     <div>
       <Container>
