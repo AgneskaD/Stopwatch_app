@@ -1,0 +1,13 @@
+@import "../../styles/settings.scss";
+
+.timer {
+  font-size: 80px;
+  width: 460px;
+  padding: 0 0 0 30px;
+}
+
+@media (max-width: 540px) {
+  .timer {
+    font-size: 14vw;
+  }
+}

@@ -1,6 +1,6 @@
 import { Button } from "./components/Button/Button.js";
 import { Container } from "./components/Container/Container.js";
-import { Stopwatch } from "./components/Stopwatch/Stopwatch.js";
+import { Timer } from "./components/Timer/Timer.js";
 import { useEffect, useState } from "react";
 
 function App() {
@@ -21,10 +21,11 @@ function App() {
 return (
   <div>
     <Container>
-        <Stopwatch time={time}></Stopwatch>
-        <Button onClick={() => setRunning(true)}>start</Button>
-        <Button onClick={() => setRunning(false)}>stop</Button>
-        <Button onClick={() => setTime(0)}>reset</Button>
+    <div className="buttons">
+          <Button onClick={() => setRunning(true)}>start</Button>
+          <Button onClick={() => setRunning(false)}>stop</Button>
+          <Button onClick={() => setTime(0)}>reset</Button>
+    </div>
     </Container>
   </div>
 );
