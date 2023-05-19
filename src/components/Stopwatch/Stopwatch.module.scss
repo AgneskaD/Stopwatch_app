@@ -1,0 +1,13 @@
+@import "../../styles/settings.scss";
+
+.stopwatch {
+  font-size: 80px;
+  text-align: center;
+  width: 100%;
+}
+
+@media (max-width: 460px) {
+  .stopwatch {
+    font-size: 15vw;
+  }
+}
