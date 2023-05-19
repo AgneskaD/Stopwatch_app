@@ -25,15 +25,12 @@ function App() {
       if (timer) clearInterval(timer);
     };
   }, [timer]);
-  
+
   return (
     <div>
       <Container>
         <Timer time={time}></Timer>
         <div className="buttons">
-          <Button onClick={() => handleStart()}>start</Button>
-          <Button onClick={() => handleStop()}>stop</Button>
-          <Button onClick={() => handleReset()}>reset</Button>
           <Button onClick={handleStart}>start</Button>
           <Button onClick={handleStop}>stop</Button>
           <Button onClick={handleReset}>reset</Button>
