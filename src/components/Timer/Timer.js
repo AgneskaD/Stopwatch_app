@@ -14,3 +14,6 @@ export const Timer = ({ time }) => {
 
     return `${hh}:${mm}:${ss}.${mil}`;
   };
+
+  return <div className={styles.timer}>{convertTime(time)}</div>;
+};
